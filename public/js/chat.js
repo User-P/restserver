@@ -58,8 +58,8 @@ const connectSocket = async () => {
         console.log('receiveMessages')
     })
 
-    socket.on('usersOnline', () => {
-        console.log('usersOnline')
+    socket.on('usersOnline', (payload) => {
+        console.log(payload)
     })
 
     socket.on('privateMessage', () => {
